@@ -24,16 +24,36 @@ body {
     margin-bottom: 100px;
 
 }
+/*Top Buttons*/
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+/*Back Button*/
+.back-bar {
+    align-content: center;
+}
+.back-bar__container {
+    display: flex;
+    background-color: whitesmoke;
+    border: #2e2e2e 3px solid;
+}
+.back-bar__back-button {
+    padding: 0 7px;
+    font-size: 30px;
+    background-color: red;
+}
+.back-bar__back-button a {
+    color: #2e2e2e;
+}
 
 /*Like bar */
 .like-bar {
-
     float: right;
 }
 
 .like-bar__container {
     display: flex;
-    margin: 15px;
     background-color: whitesmoke;
     border: #2e2e2e 3px solid;
 
@@ -46,5 +66,7 @@ body {
 }
 
 .like-bar__like-button {
-    padding: 9px 1px 0 0;
+    height: 50px;
+    width: 50px;
+    background-color: lawngreen;
 }

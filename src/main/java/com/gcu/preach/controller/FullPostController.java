@@ -21,6 +21,7 @@ public class FullPostController {
     public String getPost(@PathVariable int id, Model model) {
         blogPost = blogPostsBusinessService.getBlogPostById(id);
         // Display Full Blog Post form view
+        model.addAttribute("backButton", "Back");
         model.addAttribute("blogPost", blogPostsBusinessService.getBlogPostById(id));
         model.addAttribute("likes", blogPostsBusinessService.getBlogPostById(id).getLikes());
         return "fullpost";

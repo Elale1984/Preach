@@ -16,6 +16,28 @@
                         <table>
                             <tr>
                                 <td>
+                                    <div class="top-buttons">
+                                        <div class="back-bar">
+                                            <div class="back-bar__container">
+                                                <div class="back-bar__back-button">
+                                                    <a th:href="@{/profile/}" th:text="${backButton}"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="like-bar">
+                                            <div class="like-bar__container">
+                                                <div class="like-bar__like-button">
+                                                    <input type="image" class="like-bar__like-button" th:src="@{/img/ic_like.png}" alt="like post icon"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <h2 class="post-title" th:text="${blogPost.getTitle}">Man must explore, and this is exploration at its greatest</h2>
                                 </td>
                             </tr>
@@ -34,22 +56,7 @@
                                     <p  class="post-full-content-text" th:text="${blogPost.getFullContent}">Problems look mighty small from 150 miles up</p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="like-bar">
-                                        <div class="like-bar__container">
-                                            <div class="like-bar__number">
-                                                <p class="like-count"  th:text="${likes}" ></p>
-                                            </div>
-                                            <div class="like-bar__like-button">
-                                                <button class="btn btn-primary" type="submit">Preach</button>
-<!--                                                <input type="submit" class="like-button" th:src="@{/img/ic_like.png}" alt="like post icon"/>-->
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
                         </table>
 
                     </form>
