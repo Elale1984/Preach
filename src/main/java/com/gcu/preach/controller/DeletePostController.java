@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
-//controller for delete post
-
 @Controller
 @RequestMapping("/deletepost")
 public class DeletePostController {
