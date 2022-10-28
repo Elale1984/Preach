@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Getter
 @Setter
-
+// Blog List
 public class UserBlogList {
 
 	
