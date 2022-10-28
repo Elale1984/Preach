@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+// data
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
