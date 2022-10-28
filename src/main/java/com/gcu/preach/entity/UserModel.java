@@ -12,6 +12,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @Table
 @Entity
+//user model
 public class UserModel {
 	
 
